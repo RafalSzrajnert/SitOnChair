@@ -140,6 +140,11 @@ input[type=button] {width: auto; overflow: visible;}
 /* let's clear some floats */
 .clearfix:after { content: " "; display: block; clear: both; }
 
+* {
+	box-sizing:border-box;
+}
+
+
 
 @font-face {
     font-family: 'fira_sansmedium';
@@ -149,11 +154,9 @@ input[type=button] {width: auto; overflow: visible;}
          url('firasans-medium-webfont.svg#fira_sansmedium') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 header {
   background: black;
-  width: 800px;
   font-size: 15px;
   padding: 10px 0 5px 0;
   font-family: 'fira_sansmedium';
@@ -163,10 +166,60 @@ header {
 .floatLeft {
   color: white;
   float:left;
+  margin-left: 20px;
 }
 .greenOn {
   color: green;
   font-weight: bold;
+}
+.green {
+  color: green;
+  font-weight: bold;
+}
+.greenTab {
+  float: right;
+
+}
+.inGreen {
+  float: right;
+  width: 350px;
+  margin-top: 30px;
+  margin-right: 30px;
+  font-weight: 10;
+  font-size: 11px;
+  color: grey;
+  }
+  .backGrey{
+background: rgba(242,246,248,1);
+background: -moz-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 66%, rgba(181,198,208,1) 99%, rgba(224,239,249,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(242,246,248,1)), color-stop(66%, rgba(216,225,231,1)), color-stop(99%, rgba(181,198,208,1)), color-stop(100%, rgba(224,239,249,1)));
+background: -webkit-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 66%, rgba(181,198,208,1) 99%, rgba(224,239,249,1) 100%);
+background: -o-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 66%, rgba(181,198,208,1) 99%, rgba(224,239,249,1) 100%);
+background: -ms-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 66%, rgba(181,198,208,1) 99%, rgba(224,239,249,1) 100%);
+background: linear-gradient(to bottom, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 66%, rgba(181,198,208,1) 99%, rgba(224,239,249,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9', GradientType=0 );
+}
+  .button {
+    background-color: green;
+    border: none;
+    border-radius: 10%;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    font-size: 16px;
+    margin-right: 130px;
+    margin-top: 50px;
+}
+.sitOn {
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 70px;
+  margin-left:470px;
+}
+.menu{
+  margin-right: 20px;
 }
 a {
   color: white;
@@ -178,5 +231,456 @@ a {
 .mainWidth {
   margin: 0 auto;
   overflow: hidden;
-  width: 90%;
+  width: 800px;
+  font-family: 'fira_sansmedium';
+}
+.blackChair {
+  height:300px;
+  width: 400px;
+  background-image: url("../images/black_chair.png");
+  float: left;
+}
+.sectionWhiteBackg {
+	background: white;
+	width: 100%;
+	margin: auto;
+	}
+.level {
+	float: left;
+	padding: 20px;
+	overflow: hidden;
+	width: 33.3%;
+	margin-bottom: 50px;
+}
+.chair {
+	background-image: url("../images/box1_img.jpg");
+	height: 200px;
+	border: 1px solid grey;
+	background-position: center;
+	background-size: cover;
+}
+.margarita {
+	background-image: url("../images/box2_img.jpg");
+	height: 200px;
+	border: 1px solid grey;
+
+}
+.finds{
+	background-color: white;
+	border: 1px solid grey;
+	height: 200px;
+}
+.findsA {
+
+}
+h2 {
+	padding-top: 20px;
+}
+.lorem {
+	padding-top: 10px;
+	font-size: 12px;
+	color: grey;
+}
+h2:after {
+	content:'';
+	border: 1px solid green;
+	background: green;
+	width: 80%;
+	display:block;
+	height: 5px;
+}
+.stripe {
+	background-color: rgba(120, 109, 109, .25);
+	width: 100%;
+	height: 50px;
+	margin-top: 100px;
+	padding: 10px 0 5px 5px;
+}
+.greenPasek {
+	border: 1px solid green;
+	background: green;
+	width: 50%;
+	height: 5px;
+}
+.sectionGreyBackg {
+	background: rgb(214, 209, 209);
+	width: 100%;
+	margin: auto;
+	height: 650px;
+	}
+
+	h4{
+		padding-top: 30px;
+		font-size: 30px;
+		color: grey;
+	}
+	h4:after {
+		content:'';
+		border: 1px solid green;
+		background: green;
+		width: 200px;
+		display:block;
+		height: 5px;
+	}
+	.thirtyThree {
+
+		padding-bottom: 50px;
+		padding-top: 80px;
+
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+
+	}
+	.tłoKolor {
+		background: white;
+		height: 450px;
+		border: 1px solid grey;
+		text-align: center;
+		width: 32%;
+		margin: 10px;
+	}
+	.circle {
+	border-radius:50%;
+	border:1px solid grey;
+  display:block
+}
+.circle1 {
+	width:50px;
+	height:50px;
+	background:white;
+	position:relative;
+  margin: 0 auto;
+  top: calc(-50% + 200px);
+}
+.circle2 {
+	width:25px;
+	height:25px;
+	background:grey;
+	position:absolute;
+	top:calc(50% - 12.5px);
+	left:calc(50% - 12.5px);
+}
+	.stripeA{
+		margin: 0 auto;
+		color: green;
+	}
+	.stripeB{
+		background: white;
+		color: grey;
+		border-radius: 50%;
+		border: 1px solid grey;
+		height: 100px;
+		width: 100px;
+		margin: 10px auto;
+	}
+	.contPrize{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding-top: 20px;
+	}
+	.prize{
+		font-size: 35px;
+
+	}
+	.prizeUnder{
+		font-size: 12px;
+		margin-top: -10px;
+
+	}
+	.stripeC {
+		background-color: rgba(120, 109, 109, .50);
+		width: 100%;
+		height: 50px;
+		font-size: 20px;
+		color: grey;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+	.stripeD{
+		background-color: rgba(130, 120, 120, .25);
+		width: 100%;
+		height: 50px;
+		margin-bottom: 100px;
+		font-size: 20px;
+		color: grey;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.stripeE {
+		background-color: green;
+    border: none;
+    border-radius: 10%;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+		width: 50%;
+		height: 30px;
+		padding: 5px;
+		margin: 0 auto;
+	}
+
+
+
+
+	/* drugi prostokat */
+
+.backgroundA{
+	background-color: green;
+}
+	.circleA {
+	border-radius:50%;
+	border:1px solid green;
+  display:block
+}
+.circleA1 {
+	width:50px;
+	height:50px;
+	background:green;
+	position:relative;
+  margin: 0 auto;
+  top: calc(-50% + 200px);
+}
+.circleA2 {
+	width:25px;
+	height:25px;
+	background:white;
+	position:absolute;
+	top:calc(50% - 12.5px);
+	left:calc(50% - 12.5px);
+}
+	.stripeAA{
+		margin: 0 auto;
+		color: white;
+		background-color: green;
+	}
+	.stripeBB{
+		background: white;
+		color: green;
+		border-radius: 50%;
+		border: 1px solid grey;
+		height: 100px;
+		width: 100px;
+		margin: 10px auto;
+	}
+	.contPrizeA{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding-top: 20px;
+	}
+	.prizeA{
+		font-size: 35px;
+
+	}
+	.prizeUnderA{
+		font-size: 12px;
+		margin-top: -10px;
+
+	}
+	.stripeCC {
+		background-color: white;
+		width: 100%;
+		height: 50px;
+		font-size: 20px;
+		color: grey;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+	.stripeDD{
+		background-color: grey;
+		width: 100%;
+		height: 50px;
+		font-size: 20px;
+		color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+	.stripeDDplusOne{
+		background-color: white;
+		width: 100%;
+		height: 50px;
+		margin-bottom: 50px;
+		font-size: 20px;
+		color: grey;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.stripeEE {
+		background-color: white;
+    border: none;
+    border-radius: 10%;
+    color: green;
+    text-decoration: none;
+    font-size: 16px;
+		width: 50%;
+		height: 30px;
+		padding: 5px;
+		margin: 0 auto;
+
+	}
+/* trzeci prostokat */
+.stripeAAA{
+	margin: 0 auto;
+	color: green;
+}
+.stripeBBB{
+	background: white;
+	color: grey;
+	border-radius: 50%;
+	border: 1px solid grey;
+	height: 100px;
+	width: 100px;
+	margin: 10px auto;
+}
+
+.stripeCCC {
+	background-color: rgba(120, 109, 109, .50);
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+	color: grey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.stripeDDD{
+	background-color: rgba(130, 120, 120, .25);
+	width: 100%;
+	height: 50px;
+
+	font-size: 20px;
+	color: grey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.stripeEEE {
+	background-color: green;
+	border: none;
+	border-radius: 10%;
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	width: 50%;
+	height: 30px;
+	padding: 5px;
+	margin: 0 auto;
+}
+ .stripeDplus{
+	 background-color: rgba(120, 109, 109, .50);
+	 width: 100%;
+	 height: 50px;
+	 font-size: 20px;
+	 color: grey;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+ }
+ .stripeDplusPlus{
+	 background-color: white;
+	 width: 100%;
+	 height: 50px;
+	 font-size: 20px;
+	 color: grey;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+ }
+
+
+
+/*
+FORMULARZ
+*/
+.sectionWhiteBackg {
+	background: white;
+	width: 100%;
+	margin: auto;
+
+	box-sizing: border-box;
+
+	}
+.formularz{
+	display: flex;
+	flex-direction: row;
+}
+
+.formLeft{
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	margin: 10px;
+}
+input[type=text] {
+    width: 100%;
+    padding: 16px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+		border: 1px solid green;
+}
+#textareaBottom {
+		padding: 12px 20px;
+		margin: 8px 0;
+    width: 100%;
+    height: 165px;
+    box-sizing: border-box;
+    border: 1px solid green;
+	}
+	.formRight{
+		display: flex;
+		flex-direction: column;
+		align-content: space-around;
+
+		width: 38%;
+		margin: 10px;
+
+	}
+	#redChair{
+		width: 200px;
+		height: 150px;
+		margin-left: 30px;
+	}
+#submitBottom{
+	width: 100%;
+	background-color: green;
+	border: 1px solid green;
+	height: 50px;
+	border-radius: 10%;
+	color: white;
+	font-size: 20px;
+	margin-top: 50px;
+}
+
+.squaredTwo {
+  width: 28px;
+  height: 28px;
+	border: 1px solid green;
+	margin-top: 10px;
+}
+
+.footer{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.copyright{
+	font-size: 12px;
+	color: grey;
+	margin-top: 10px;
+}
+.images{
+	padding-left: 140px;
 }
